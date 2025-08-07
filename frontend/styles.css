@@ -1,0 +1,137 @@
+.container {
+  overflow-x: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin: 20px auto;
+  max-width: 700px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableau {
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+  color: #383a3e;
+  border-collapse: collapse;
+}
+
+.tableau thead {
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #9a9b9c;
+  color: #060606;
+}
+
+.tableau th,
+.tableau td {
+  padding: 12px 24px;
+}
+
+.tableau tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.tableau tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tableau th[scope="row"] {
+  font-weight: 500;
+  color: #111827;
+  white-space: nowrap;
+}
+
+a {
+  background-color: rgb(39, 124, 253);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(1, 64, 157);
+  transition-duration: 200ms;
+}
+
+form {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px 20px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+form label {
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #374151;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 9px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border 0.2s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+form button,
+form input[type="submit"] {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+  background: #1d4ed8;
+}
+
+.modifier-link {
+  background-color: rgb(8, 135, 8);
+}
+
+.modifier-link:hover{
+  background-color: rgb(14, 99, 14);
+  transition-duration: 200ms;
+}
+
+.supprimer-link {
+  background-color: red;
+}
+
+.supprimer-link:hover{
+  background-color: rgb(123, 12, 12);
+  transition-duration: 200ms;
+}
+
+#moyenne {
+  margin: 20px;
+  font-size: large;
+}

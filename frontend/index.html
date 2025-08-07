@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Project-Gestion-Note</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Etudiants</h1>
+      <table id="student" class="tableau">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>nom</th>
+            <th>prenom</th>
+            <th>date de Naissance</th>
+            <th>Notes</th>
+            <th>Modifier</th>
+            <th>Supprimer</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <div>
+      <form id="studentForm">
+        <h1>Enregistrer un nouvel étudiant</h1>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required /><br /><br />
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required /><br /><br />
+
+        <label for="dateNaissance">Date de naissance :</label>
+        <input
+          type="date"
+          id="dateNaissance"
+          name="dateNaissance"
+          required
+        /><br /><br />
+
+        <button type="submit">Créer l'étudiant</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Notes</title>
+</head>
+<body>
+    <div class="container">
+      <h1>Notes</h1>
+      <table id="tableauNote" class="tableau">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Matiere</th>
+            <th>Note</th>
+            <th>Supprimer</th>
+            <th>Modifier</th>
+          </tr>
+        </thead>
+        <tbody id="notes"></tbody>
+      </table>
+
+      <div id="moyenne"></div>
+
+      <div>
+      <form id="noteForm">
+        <h1>Enregistrer une note</h1>
+        <label for="matiere">Matiere :</label>
+        <input type="text" id="matiere" name="matiere" required /><br /><br />
+
+        <label for="valeur">Note :</label>
+        <input type="text" id="valeur" name="valeur" required /><br /><br />
+
+        <button type="submit">Ajouter note</button>
+      </form>
+    </div>
+    </div>
+    
+    <script src="notes.js"></script>
+</body>
+</html>
